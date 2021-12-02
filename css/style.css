@@ -1,18 +1,16 @@
 body{
     margin: 0 auto;
+    
 }
 *{
     box-sizing: border-box;
 }
 .header{
-    max-width:  1600px;
     min-height: 800px;
-    margin: 0  auto;
 }
 .container{
-    width: 1920px;
-    min-height: 600px;
     margin: 0 auto;
+    max-width: 1200px;
     
 }
 .navbar{
@@ -55,9 +53,10 @@ body{
     padding: 24px 19px 19px 18px;
 }
 .hero{
-   width: 2000px;
+   position: relative;
    min-height: 700px;
    background: url(../img/tent.jpg) no-repeat;
+   background-size: cover;
 
 }
 .bullets{
@@ -76,4 +75,29 @@ body{
 .woman-center{
     width: 141px;
     height: 135px;
+}
+.text{
+    color: white ;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+.btn{
+    color: white;
+    background-color: #1a54e7;
+    padding: 11px 18px 10px 18px;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+}
+.contact{
+    color: #1a54e7;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    margin-left: 900px;
+}
+.footer-tent{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
 }
