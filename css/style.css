@@ -7,11 +7,11 @@ body{
 }
 .header{
     min-height: 800px;
+    font-family: 'PT Sans', sans-serif;
 }
 .container{
     margin: 0 auto;
     max-width: 1200px;
-    
 }
 .navbar{
     display: flex;
@@ -76,9 +76,8 @@ body{
     height: 135px;
 }
 .text{
-    color: white ;
+    color: #f2f2f2;
     font-family: 'PT Sans', sans-serif;
-    
 }
 .btn{
     color: white;
@@ -98,5 +97,48 @@ body{
 .footer-tent{
     display: flex;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 80px;
+}
+.tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    gap: 40px;
+}
+.tab-text{
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
+}
+.tab-01{
+    width: 578px;
+    height: 392px;
+}
+.tab-text{
+    color: #999999;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+.tab-info{
+    display: flex;
+    align-items: center;
+}
+.contact{
+    margin-left: 8px;
+}
+.center-box-info{
+    position: absolute;
+    top: 1300px;
+    color: rgb(255, 255, 255);
+    left: 600px;
+}
+.center-title{
+    font-size: 28px;
+    font-weight: 400;
+}
+.center-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+.center-box-link{
+    align-items: center;
 }
