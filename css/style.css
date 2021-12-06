@@ -1,6 +1,5 @@
 body{
-    margin: 0 auto;
-    
+    margin: 0 ;
 }
 *{
     box-sizing: border-box;
@@ -14,23 +13,39 @@ body{
     max-width: 1200px;
 }
 .navbar{
-    display: flex;
     font-family: 'PT Sans', sans-serif;
-    align-items: center;
     background-color: rgb(255, 255, 255);
-    padding-bottom: 18px;
-    margin-top: 8px;
+    background: linear-gradient(to right,
+    #1a53e7 50%, white 50%);
+}
+.navbar__container {
+    display: flex;
+}
+.navbar-right {
+    display: flex;
+    flex: 1;
+    background: #fff;
+    padding: 8px 20px;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
 }
 .logo{
     color: white;
     background-color: #1a53e7;
-    padding: 22px 34px 18px 400px ;
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
-    width: 28px;
-    height: 6px;
 }
-
+.navbar-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.category {
+    margin-left: auto;
+}
 .more{
     margin-left: 35px;
     color: #b2b2b2;
@@ -48,7 +63,6 @@ body{
     color: #1a54e7;
 }
 .logo-glass{
-    padding: 24px 19px 19px 18px;
 }
 .hero{
    position: relative;
@@ -59,6 +73,7 @@ body{
 }
 .bullets{
     margin-left: 8px;
+    align-self: center;
 }
 .title{
     color: white;
@@ -114,6 +129,11 @@ body{
     position: absolute;
     top: 960px;
     font-weight: 500;
+}
+.tab-title{
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
 }
 .tab-text{
     font-size: 24px;
@@ -184,7 +204,12 @@ body{
 .info-avocado{
     display: flex;
     align-items: center;
-
+}
+.avocado-title{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
 }
 .footer-box{
     margin: 0 auto;
@@ -193,6 +218,8 @@ body{
 .footer-center{
     background: url(../img/Newsletter.png)no-repeat;
     min-height: 420px;
+    position: relative;
+    background-size: cover;
 }
 .footer-info{
     text-align: center;
@@ -239,12 +266,41 @@ color: #a7acbc;
 font-weight: 300;
 font-family: 'Lato', sans-serif;
 }
-.btn{
+.footer-btn{
     display: inline-block;
     color: #1a54e7;
 font-weight: 700;
 font-family: "PT Sans";
 background-color: white;
 border-radius: 25px;
-padding: 15px 47px 15px 47px;
+padding: 16px 47px 15px 47px;
+text-decoration: none;
+position: relative;
+}
+.btn-input{
+    right: -50px;
+    background-color: none;
+    padding: 15px 44px 15px 44px;
+    height: 50px;
+    border-radius: 25px;
+    border-color: none;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.418);
+    border: 2;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.527);
+    top: -2px;
+}
+
+
+@media screen and (max-width: 1140px) {
+    .navbar-nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+    }
 }
