@@ -183,6 +183,7 @@ body{
 }
 .center-box{
     position: relative;
+    font-family: 'Lato', sans-serif;
 }
 .center-title{
     font-size: 45px;
@@ -279,8 +280,8 @@ font-weight: 300;
 font-family: 'Lato', sans-serif;
 }
 .footer-btn{
-    display: inline-block;
-    color: #1a54e7;
+display: inline-block;
+color: #1a54e7;
 font-weight: 700;
 font-family: "PT Sans";
 background-color: white;
@@ -310,35 +311,34 @@ position: relative;
 
 @media screen and (max-width: 1140px) {
     .navbar-nav {
-        position: fixed;
-        right: 0;
-        top: 0;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.541);
-        justify-content: center;
-        align-items: center;
-        transition: .5s;
-        transform: translateX(-100%);
-        z-index: 100;
-    }
-    .navbar-nav.active {
+    position: fixed;
+    right: 0;
+    top: 0;    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.541);
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    transform: translateX(-100%);
+    z-index: 100;
+}
+.navbar-nav.active {
         transform: translateX(0);
-    }
-    .bullets {
+}
+.bullets {
         position: relative;
         z-index: 101;
-    }
-    .info-company,
-    .category {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
+}
+.info-company,
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     }
     .tab-01{
         width: 520px;
@@ -387,11 +387,11 @@ position: relative;
         height: auto;
     }
     .tab-img-01{
-        width: 365px;
+        width: 440px;
         height: auto;
     }
     .tab-img-02{
-        width: 365px;
+        width: 440px;
         height: auto;
     }
     .tab-02{
@@ -650,7 +650,7 @@ position: relative;
     .tab-img-01{
    max-width: 430px;
     height: 96.63px;
-    width: 180px;
+    width: 200px;
     }
     .tabs{
         height: 300px;
@@ -665,7 +665,7 @@ position: relative;
     .tab-img-02{
     max-width: 430px;
     height: auto;
-    width: 180px;
+    width: 200px;
     max-height: 240px;
     }
     .center-box{
@@ -806,7 +806,13 @@ position: relative;
         font-size: 13px;
     }
     .footer-end-text{
-        font-size: 13px;
+   font-size: 13px;
+    }
+    .tab-title{
+        font-size: 12px;
+    }
+    .tab-text{
+        font-size: 12px;
     }
 }
 
